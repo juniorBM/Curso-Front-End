@@ -1,0 +1,22 @@
+<h1 class="br">Listagem Projetos</h1>
+
+  <table class="br">
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Descricao</th>
+      <th>Ação</th>
+    </tr>
+    <tr *ngFor="let p of projetos" [routerLink]="['/projeto/alterar', p.id]">
+      <td>{{ p.id }}</td>
+      <td>{{ p.nomeProjeto }}</td>
+      <td>{{ p.descricaoProjeto }}</td>
+      <th><button class="btnEstilo" (click)="deletarProjeto(p); $event.stopPropagation()">Deletar</button></th>
+    </tr>
+  </table>
+  <div class="br">
+    {{ msg }}
+  </div>
+  <div class="divLink">
+    <a href="/projeto/save" class="br linkEstilo">Novo Projeto</a>
+  </div>

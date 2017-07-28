@@ -1,0 +1,6 @@
+POO
+É um paradigma de programaçao que usa abstração para criar modelos baseados no mundo real
+
+JavaScript
+Tipo de POO na qual não temos presença de classes
+https://jsfiddle.net

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS3: Bordas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            div {
+                width: 200px;
+                height: 200px;
+                background-color: black;
+                border-radius: 20px;
+                display: inline-block;
+                margin-right: 20px;
+            }
+            div.a {
+                /*todas a bordas arredondadas 15px */
+                border-radius: 15px;
+            }
+            div.b {
+                /*borda superior esquerda e inferior direita com 5px  */
+                border-radius: 5px
+            }
+            div.c {
+                /*borda superior esquerda com 5px  */
+                /*borda superior direita e inferior esquerda com 20px  */
+                /*borda inferior direita com 50px  */
+                border-radius: 5px 20px 50px;
+            }
+            div.d {
+                /*borda superior esquerda com 5px  */
+                /*borda superior direita com 20px  */
+                /*borda inferior direita com 50px  */
+                /*borda inferior esquerda com 100px  */
+                border-radius: 5px 20px 50px 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+    </body>
+</html>

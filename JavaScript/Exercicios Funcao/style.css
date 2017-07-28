@@ -1,0 +1,17 @@
+.btnComp {
+    background-color: #2196F3;
+    text-transform: uppercase;
+    border-radius: 2px;
+    height: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    font-family: Arial;
+    box-shadow: 
+        0px 0px 4px 0px rgba(0, 0, 0, 0.14), 
+        0px 3px 4px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+

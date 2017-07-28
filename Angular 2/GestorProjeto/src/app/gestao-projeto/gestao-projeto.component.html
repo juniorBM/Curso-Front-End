@@ -1,0 +1,19 @@
+<div>
+  <h2 class="br">Salvar Projeto</h2>
+  <br><br>
+  <form (ngSubmit)="onSubmit()" #gestorForm="ngForm">
+    <div class="br mdc-textfield"> 
+      <input class="mdc-textfield__input tamanho" #nomeProjeto="ngModel" [(ngModel)]="gp.nomeProjeto" type="text" name="nomeProjeto" required placeholder="Informe o nome do projeto">
+     </div>  
+     <div class="br mdc-textfield"> 
+      <input class="mdc-textfield__input tamanho" #descricaoProjeto type="text" [(ngModel)]="gp.descricaoProjeto" name="descricaoProjeto" placeholder="Informe a descricao do projeto" required>
+     </div> 
+    <button class="br btnEstilo" type="submit" [disabled]="!gestorForm.form.valid">Gravar Projeto</button>
+    <div class="br">{{ msg }}</div>
+  </form>
+  <div class="divLink">
+    <a href="/projetos" class="br linkEstilo">Listagem Projetos</a>
+  </div>
+</div>
+<br>
+<br>

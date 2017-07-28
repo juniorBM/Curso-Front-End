@@ -1,0 +1,21 @@
+<h1>Cores</h1>
+<br>
+<br>
+<table border="1">
+    <tr>
+        <th>Cor</th>
+    </tr>
+    <tr *ngFor="let cor of cores" (click)="corSelecionada = cor">
+        <td *ngIf="cor !== 'Green'">{{ cor }}</td>
+    </tr>
+</table>
+<br>    
+<br>
+<p [style.color]="corSelecionada">Cor selecionada: {{ corSelecionada }}</p>
+<br>
+<br>
+<!-- [ngStyle] -->
+<p [ngClass]="{'azul': corSelecionada === 'Blue'}">Cor selecionada(material design): {{ corSelecionada }}</p>
+<br>
+<br>
+<p appCor>Primeira diretiva</p>

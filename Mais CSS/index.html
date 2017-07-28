@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Uso de seletores do CSS3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            /* Seletor de atributos (name atributo "nome atribuido ao atributo)" */
+            input[name="email"] {
+                background-color: black;
+            }
+
+            /* Seletor de irmãos: pega todos para baixo */
+            /* h2 ~ p{
+                font-style: italic;
+            } */
+            
+            /* Seletor de irmãos adjacentes: pega apenas o primeiro*/
+            h2 + p{
+                font-style: italic;
+            }
+
+            /* Seletor de filho direto */
+            article > h1 {
+                color: blue;
+            }
+
+            /* Seletor de Negação */
+            p:not(.especial) {
+                color: gray;
+            }
+            /* Pseudo-Classes */
+            li:first-child {
+                color: red;
+            }
+            li:last-child {
+                color: blue;
+            }
+            li:nth-child(3) {
+                color: yellow;
+            }
+            /* par */
+            li:nth-child(2n) {
+                color: green;
+            }
+            /* impar */
+            li:nth-child(2n+1){
+                color: red;
+            }
+
+            /* Pseudo-classes de estado */
+            a {
+                background-color: blue;
+            }
+            /* quando o usuário passa o mouse por cima  */
+            a:hover {
+                background-color: red;
+            }
+            /* quando a tag "a" contém o atributo "href", ou seja, ela é um link  */
+            a:link {
+                background-color: green;
+            }
+            /* quando o usuário já visitou o link anteriormente  */
+            a:visited {
+                background-color: purple;
+            }
+            /* exato momento que o usuário clica no elemento  */
+            a:active {
+                background-color: yellow;
+            }
+
+            /* Pseudo elemento  */
+            p::first-letter {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Utilizando o seletor de atributos -->
+        <label for="">E-mail</label>
+        <input type="text" name="email"/>
+        <label for="">Senha</label>
+        <input type="password" name="senha"/>
+
+        <!-- Utilizando seletor de irmãos -->
+        <article>
+            <h1>Titulo</h1>
+            <p>Inicio</p>
+
+            <h2>Subtitulo</h2>
+            <p>Texto</p>
+            <p>Mais texto</p>
+            <p>Teste de p</p>
+        </article>
+
+        <!-- Utilizando seletor de filho direto -->
+        <article>
+            <h1>Titulo Principal</h1>
+            
+            <section>
+                <h1>Titulo de Seção</h1>
+            </section>
+        </article>
+
+        <!-- Utilizando Seletor de Negação -->
+        <p>Texto</p>
+        <p>Outro Texto</p>
+        <p class="especial">Texto especial</p>
+        <p>Mais texto</p>
+
+        <!-- Utilizando Pseudo-Classes -->
+        <ul>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+            <li>Quarto item</li>
+        </ul>
+
+        <!-- Utilizando Pseudo-classes de estado -->
+        <a href="http://smn.com.br">Teste</a>
+
+        <!-- Pseudo elemento -->
+        <p>A SMN tem os melhores cursos de front-end!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nisi dolor amet distinctio vero magni, explicabo alias consequatur voluptas iusto! Commodi unde nam laudantium, porro veritatis ab reprehenderit quo. Cupiditate!</p>
+    </body>
+</html>
+

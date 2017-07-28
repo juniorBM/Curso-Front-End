@@ -1,0 +1,11 @@
+JavaScript:
+Imperativa e estruturada
+Tipagem dinamica
+Baseada em objetos
+Funcional
+
+Undefined
+É reornado cado uma propriedade 
+
+Break
+interrompe o loop 

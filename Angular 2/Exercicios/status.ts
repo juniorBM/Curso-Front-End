@@ -1,0 +1,1 @@
+export enum Status {Andamento, Concluido, Cancelado}

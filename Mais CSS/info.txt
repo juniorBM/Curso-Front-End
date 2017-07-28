@@ -1,0 +1,16 @@
+﻿-webkit-: Navegador webkit (chrome, safari, iOS, Android)
+-moz-: Mozila Firefox
+-ms-: Internet Explorer
+-o-: Opera
+
+------------------------
+Progressive Enhancement e graceful degradation
+
+Utimate CSS Gradiente 
+
+------------------------
+Animações: rob la placa
+linear: velocidade constante na animação
+ease: redução gradual na velocidade da animação
+ease-in-out: aumento gradual, depois redução gradual na velocidade da animação
+Tem mais dessas aqui

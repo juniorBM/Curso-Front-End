@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS3: Transições</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            div {
+                width: 200px;
+                height: 200px;
+                background-color: black;
+                margin-right: 20px;
+                position: relative;
+                top: 0;
+                /*all faz todas  */
+                transition: top 2s ease-in, background-color 2s ease;
+            }
+            div:hover {
+                top: 10px;
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

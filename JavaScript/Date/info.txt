@@ -1,0 +1,7 @@
+getDate - Retorna dia
+getDay - Retorna dia da semana
+getFullYear - Retorna o ano
+getHours - Retorna as horas
+getMinutes Retorna os minutos
+getMonth - Retorna o mes
+getSeconds - Retorna os segunds

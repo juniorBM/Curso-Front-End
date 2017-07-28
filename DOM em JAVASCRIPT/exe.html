@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Original</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <h1 id="titulo" ondblclick="mudaTitulo()">Original</h1>
+        <img src="https://goo.gl/oztsoC" alt="Pepe" style="height: 200px; width: 200px"/>
+        <p id="primeiro" class="paragrafo">Este é um paragrafo de texto</p>
+        <p id="segundo" class="paragrafo">Este é outro paragrafo de texto</p>
+        <p id="terceiro" class="paragrafo">Este é mais um paragrafo de texto</p>
+        <p id="quarto" class="paragrafo">Este é um ultimo paragrafo de texto</p>
+        <button onclick="mudaTitulo()">Mudar titulo</button> <br><br>
+        <input type="text" id="campo" value=""/>
+        <input type="number" required min="1" max="120" id="texto" onkeyup="mostraErro()" value=""/>
+        <button onclick="validaTexto()">Validar</button><br>
+        <span id="msg" style="color: red; font-weight: bold"></span>
+    </body>
+</html>
+
+<script>
+    var t = false;
+    function mudaTitulo() {
+        if (!t) {
+            document.getElementById("titulo").innerText = 'Outro texto';
+            t = true;
+        } else {
+            document.getElementById("titulo").innerText = 'Original';
+            t = false;
+        }
+    }
+
+    function validaTexto() {
+        var txt = document.getElementById("texto");
+        var msg = document.getElementById("msg");
+        if (isNaN(txt.value)) {
+            msg.innerText = 'Valor deve ser numerico!!';
+        }else if (txt.value < 1) {
+            msg.innerText = 'Idade deve ser maior que zero!!';
+        }else if (txt.value > 120) {
+            msg.innerText = 'Idade deve ser menor que 120!!';
+        }else {
+            msg.innerText = '';
+        }
+    }
+
+    function mostraErro() {
+        var txt = document.getElementById("texto");
+        var msg = document.getElementById("msg");
+        msg.innerText = txt.validationMessage;
+    }
+</script>
